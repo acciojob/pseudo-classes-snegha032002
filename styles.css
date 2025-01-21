@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+/* Set root background color */
+:root {
+    background-color: rgb(135, 206, 235);
+}
+
+/* Styling the article paragraphs */
+article p:first-child {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+article p:nth-child(2) {
+    color: inherit; /* Standard text color */
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Styling the unordered list and list items */
+ul {
+    list-style-type: none;
+    padding: 10;
+    margin: 0;
+}
+
+ul li {
+    width: 50%;
+    padding: 10px;
+    background-color: gray;
+}
+
+/* Odd items: White background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last items: Font size 22px */
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item: Pink background */
+ul li:nth-last-child(3) {
+    background-color: pink;
+}
